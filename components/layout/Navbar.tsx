@@ -60,6 +60,17 @@ export function Navbar({ onReset, isPremiumMode = false }: NavbarProps) {
                         </Link>
 
                         <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+                            
+                            {/* --- Premium 切換按鈕 --- */}
+                            <Link
+                                href={isPremiumMode ? '/' : '/premium'}
+                                className="flex items-center justify-center px-3 py-1.5 sm:px-4 sm:py-2 rounded-[var(--radius-full)] bg-rose-500/10 text-rose-500 border border-rose-500/20 hover:bg-rose-500/20 hover:scale-105 transition-all duration-200 cursor-pointer font-bold text-xs sm:text-sm"
+                                data-focusable
+                            >
+                                {isPremiumMode ? '返回普通頻道' : 'Premium 頻道'}
+                            </Link>
+                            {/* --------------------------- */}
+
                             {/* IPTV Link - only show if user has iptv_access or no auth configured */}
                             {hasPermission('iptv_access') && (
                             <Link
@@ -97,15 +108,9 @@ export function Navbar({ onReset, isPremiumMode = false }: NavbarProps) {
                                     </button>
                                 </div>
                             )}
-                            <a
-                                href="https://github.com/KuekHaoYang/KVideo"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-[var(--radius-full)] bg-[var(--glass-bg)] border border-[var(--glass-border)] text-[var(--text-color)] hover:bg-[color-mix(in_srgb,var(--accent-color)_10%,transparent)] transition-all duration-200 cursor-pointer hidden sm:flex"
-                                aria-label="GitHub 仓库"
-                            >
-                                <Icons.Github size={20} />
-                            </a>
+                            
+                            {/* 這裡原本的 GitHub 連結已移除 */}
+
                             <Link
                                 href={settingsHref}
                                 className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-[var(--radius-full)] bg-[var(--glass-bg)] border border-[var(--glass-border)] text-[var(--text-color)] hover:bg-[color-mix(in_srgb,var(--accent-color)_10%,transparent)] transition-all duration-200 cursor-pointer"
