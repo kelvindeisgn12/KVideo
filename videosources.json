@@ -623,11 +623,10 @@
         "enabled": true,
         "priority": 22
     },
-[
     {
         "id": "api_1",
         "name": "KK写真资源",
-        "baseUrl": "https://kkzy.me/api.php/provide/vod/at/xml",
+        "baseUrl": "https://kkzy.me/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 23
@@ -635,7 +634,7 @@
     {
         "id": "api_2",
         "name": "91md",
-        "baseUrl": "http://bt4.cc/api.php/provide/vod/from/mdm3u8/at/xml",
+        "baseUrl": "http://bt4.cc/api.php/provide/vod/from/mdm3u8",
         "group": "premium",
         "enabled": true,
         "priority": 24
@@ -643,7 +642,7 @@
     {
         "id": "api_3",
         "name": "丝袜资源",
-        "baseUrl": "https://siwazyw.cc/api.php/provide/vod/at/xml",
+        "baseUrl": "https://siwazyw.cc/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 25
@@ -651,7 +650,7 @@
     {
         "id": "api_4",
         "name": "芒果资源",
-        "baseUrl": "https://mgzyz1.com/api.php/provide/vod/at/xml",
+        "baseUrl": "https://mgzyz1.com/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 26
@@ -659,7 +658,7 @@
     {
         "id": "api_5",
         "name": "水蜜桃",
-        "baseUrl": "http://51smt4.xyz/api.php/provide/vod/at/xml",
+        "baseUrl": "http://51smt4.xyz/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 27
@@ -667,7 +666,7 @@
     {
         "id": "api_6",
         "name": "秀色资源",
-        "baseUrl": "https://api.xiuseapi.com/api.php/provide/vod/at/xml",
+        "baseUrl": "https://api.xiuseapi.com/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 28
@@ -675,7 +674,7 @@
     {
         "id": "api_7",
         "name": "探探资源",
-        "baseUrl": "https://apittzy.com/api.php/provide/vod/at/xml",
+        "baseUrl": "https://apittzy.com/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 29
@@ -683,7 +682,7 @@
     {
         "id": "api_8",
         "name": "色窝资源",
-        "baseUrl": "https://sewozyapi.com/api.php/provide/vod/at/xml",
+        "baseUrl": "https://sewozyapi.com/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 30
@@ -691,7 +690,7 @@
     {
         "id": "api_9",
         "name": "淫窝资源",
-        "baseUrl": "https://api.yinwoapi.com/api.php/provide/vod/at/xml",
+        "baseUrl": "https://api.yinwoapi.com/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 31
@@ -699,7 +698,7 @@
     {
         "id": "api_10",
         "name": "色屌丝资源",
-        "baseUrl": "http://sdszyapi.com/home/cjapi/asbb/mc10/vod/xml",
+        "baseUrl": "http://sdszyapi.com/home/cjapi/asbb/mc10/vod",
         "group": "premium",
         "enabled": true,
         "priority": 32
@@ -707,7 +706,7 @@
     {
         "id": "api_11",
         "name": "小姐姐资源",
-        "baseUrl": "https://xjjzyapi.com/home/cjapi/askl/mc10/vod/xml",
+        "baseUrl": "https://xjjzyapi.com/home/cjapi/askl/mc10/vod",
         "group": "premium",
         "enabled": true,
         "priority": 33
@@ -715,7 +714,7 @@
     {
         "id": "api_12",
         "name": "52AVAV",
-        "baseUrl": "https://52zyapi.com/home/cjapi/asda/mc10/vod/xml",
+        "baseUrl": "https://52zyapi.com/home/cjapi/asda/mc10/vod",
         "group": "premium",
         "enabled": true,
         "priority": 34
@@ -723,7 +722,7 @@
     {
         "id": "api_13",
         "name": "我要啪啪",
-        "baseUrl": "http://www.caiji21.com/home/cjapi/klkl/mc10/vod/xml",
+        "baseUrl": "http://www.caiji21.com/home/cjapi/klkl/mc10/vod",
         "group": "premium",
         "enabled": true,
         "priority": 35
@@ -731,7 +730,7 @@
     {
         "id": "api_14",
         "name": "AV集中淫",
-        "baseUrl": "https://www.caiji22.com/home/cjapi/klp0/mc10/vod/xml",
+        "baseUrl": "https://www.caiji22.com/home/cjapi/klp0/mc10/vod",
         "group": "premium",
         "enabled": true,
         "priority": 36
@@ -739,7 +738,7 @@
     {
         "id": "api_15",
         "name": "夜夜撸资源",
-        "baseUrl": "https://www.caiji23.com/home/cjapi/kls6/mc10/vod/xml",
+        "baseUrl": "https://www.caiji23.com/home/cjapi/kls6/mc10/vod",
         "group": "premium",
         "enabled": true,
         "priority": 37
@@ -747,7 +746,7 @@
     {
         "id": "api_16",
         "name": "大屌丝资源",
-        "baseUrl": "http://www.caiji24.com/home/cjapi/p0d2/mc10/vod/xml",
+        "baseUrl": "http://www.caiji24.com/home/cjapi/p0d2/mc10/vod",
         "group": "premium",
         "enabled": true,
         "priority": 38
@@ -755,7 +754,7 @@
     {
         "id": "api_17",
         "name": "咪咪资源",
-        "baseUrl": "http://www.caiji25.com/home/cjapi/p0as/mc10/vod/xml",
+        "baseUrl": "http://www.caiji25.com/home/cjapi/p0as/mc10/vod",
         "group": "premium",
         "enabled": true,
         "priority": 39
@@ -763,7 +762,7 @@
     {
         "id": "api_18",
         "name": "鲍鱼AV",
-        "baseUrl": "http://caiji26.com/home/cjapi/p0g8/mc10/vod/xml",
+        "baseUrl": "http://caiji26.com/home/cjapi/p0g8/mc10/vod",
         "group": "premium",
         "enabled": true,
         "priority": 40
@@ -771,7 +770,7 @@
     {
         "id": "api_19",
         "name": "精工厂资源",
-        "baseUrl": "https://jgczyapi.com/home/cjapi/kld2/mc10/vod/xml",
+        "baseUrl": "https://jgczyapi.com/home/cjapi/kld2/mc10/vod",
         "group": "premium",
         "enabled": true,
         "priority": 41
@@ -779,7 +778,7 @@
     {
         "id": "api_20",
         "name": "点点娱乐",
-        "baseUrl": "https://xx55zyapi.com/home/cjapi/ascf/mc10/vod/xml",
+        "baseUrl": "https://xx55zyapi.com/home/cjapi/ascf/mc10/vod",
         "group": "premium",
         "enabled": true,
         "priority": 42
@@ -787,7 +786,7 @@
     {
         "id": "api_21",
         "name": "大MM资源",
-        "baseUrl": "https://www.dmmapi.com/home/cjapi/asd2c7/mc10/vod/xml",
+        "baseUrl": "https://www.dmmapi.com/home/cjapi/asd2c7/mc10/vod",
         "group": "premium",
         "enabled": true,
         "priority": 43
@@ -795,7 +794,7 @@
     {
         "id": "api_22",
         "name": "黄瓜TV资源",
-        "baseUrl": "https://www.caiji10.com/home/cjapi/cfs6/mc10/vod/xml",
+        "baseUrl": "https://www.caiji10.com/home/cjapi/cfs6/mc10/vod",
         "group": "premium",
         "enabled": true,
         "priority": 44
@@ -803,7 +802,7 @@
     {
         "id": "api_23",
         "name": "快播盒子资源",
-        "baseUrl": "https://www.caiji09.com/home/cjapi/cfp0/mc10/vod/xml",
+        "baseUrl": "https://www.caiji09.com/home/cjapi/cfp0/mc10/vod",
         "group": "premium",
         "enabled": true,
         "priority": 45
@@ -811,7 +810,7 @@
     {
         "id": "api_24",
         "name": "日本AV在线",
-        "baseUrl": "https://www.caiji07.com/home/cjapi/cfcf/mc10/vod/xml",
+        "baseUrl": "https://www.caiji07.com/home/cjapi/cfcf/mc10/vod",
         "group": "premium",
         "enabled": true,
         "priority": 46
@@ -819,7 +818,7 @@
     {
         "id": "api_25",
         "name": "久久热在线",
-        "baseUrl": "https://www.caiji06.com/home/cjapi/cfbb/mc10/vod/xml",
+        "baseUrl": "https://www.caiji06.com/home/cjapi/cfbb/mc10/vod",
         "group": "premium",
         "enabled": true,
         "priority": 47
@@ -827,7 +826,7 @@
     {
         "id": "api_26",
         "name": "青青草视频",
-        "baseUrl": "https://www.caiji05.com/home/cjapi/cfda/mc10/vod/xml",
+        "baseUrl": "https://www.caiji05.com/home/cjapi/cfda/mc10/vod",
         "group": "premium",
         "enabled": true,
         "priority": 48
@@ -835,7 +834,7 @@
     {
         "id": "api_27",
         "name": "麻豆视频",
-        "baseUrl": "https://www.caiji04.com/home/cjapi/cfc7/mc10/vod/xml",
+        "baseUrl": "https://www.caiji04.com/home/cjapi/cfc7/mc10/vod",
         "group": "premium",
         "enabled": true,
         "priority": 49
@@ -843,7 +842,7 @@
     {
         "id": "api_28",
         "name": "一本道资源",
-        "baseUrl": "https://www.caiji03.com/home/cjapi/cfg8/mc10/vod/xml",
+        "baseUrl": "https://www.caiji03.com/home/cjapi/cfg8/mc10/vod",
         "group": "premium",
         "enabled": true,
         "priority": 50
@@ -851,7 +850,7 @@
     {
         "id": "api_29",
         "name": "草榴视频",
-        "baseUrl": "https://www.caiji02.com/home/cjapi/cfas/mc10/vod/xml",
+        "baseUrl": "https://www.caiji02.com/home/cjapi/cfas/mc10/vod",
         "group": "premium",
         "enabled": true,
         "priority": 51
@@ -859,7 +858,7 @@
     {
         "id": "api_30",
         "name": "亚洲成人在线",
-        "baseUrl": "https://www.caiji01.com/home/cjapi/cfd2/mc10/vod/xml",
+        "baseUrl": "https://www.caiji01.com/home/cjapi/cfd2/mc10/vod",
         "group": "premium",
         "enabled": true,
         "priority": 52
@@ -867,7 +866,7 @@
     {
         "id": "api_31",
         "name": "99资源",
-        "baseUrl": "http://99zy.pw/api.php/provide/vod/at/xml",
+        "baseUrl": "http://99zy.pw/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 53
@@ -875,7 +874,7 @@
     {
         "id": "api_32",
         "name": "痴汉队长",
-        "baseUrl": "https://javcaptain.com/api.php/provide/vod/at/xml",
+        "baseUrl": "https://javcaptain.com/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 54
@@ -883,7 +882,7 @@
     {
         "id": "api_33",
         "name": "抖阴视频",
-        "baseUrl": "https://www.888dav.com/api.php/provide/vod/at/xml",
+        "baseUrl": "https://www.888dav.com/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 55
@@ -891,7 +890,7 @@
     {
         "id": "api_34",
         "name": "麻豆视频2",
-        "baseUrl": "https://madouse.la/api.php/provide/vod/at/xml",
+        "baseUrl": "https://madouse.la/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 56
@@ -899,7 +898,7 @@
     {
         "id": "api_35",
         "name": "91麻豆",
-        "baseUrl": "https://91md.me/api.php/provide/vod/at/xml",
+        "baseUrl": "https://91md.me/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 57
@@ -907,7 +906,7 @@
     {
         "id": "api_36",
         "name": "爱操资源",
-        "baseUrl": "https://aicaozy.com/api.php/provide/vod/at/xml",
+        "baseUrl": "https://aicaozy.com/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 58
@@ -915,7 +914,7 @@
     {
         "id": "api_37",
         "name": "浪潮资源",
-        "baseUrl": "http://langchaozy6.com/api.php/provide/vod/at/xml",
+        "baseUrl": "http://langchaozy6.com/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 59
@@ -923,7 +922,7 @@
     {
         "id": "api_38",
         "name": "速播资源",
-        "baseUrl": "https://api.suboapi.com/api.php/provide/vod/at/xml",
+        "baseUrl": "https://api.suboapi.com/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 60
@@ -931,7 +930,7 @@
     {
         "id": "api_39",
         "name": "酷豆资源",
-        "baseUrl": "https://kudouzy.com/api.php/provide/vod/at/xml",
+        "baseUrl": "https://kudouzy.com/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 61
@@ -939,7 +938,7 @@
     {
         "id": "api_40",
         "name": "酷豆2",
-        "baseUrl": "https://api.kdapi.info/api.php/provide/vod/at/xml",
+        "baseUrl": "https://api.kdapi.info/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 62
@@ -947,7 +946,7 @@
     {
         "id": "api_41",
         "name": "酷伦理",
-        "baseUrl": "https://api.kudian70.com/api.php/provide/vod/at/xml",
+        "baseUrl": "https://api.kudian70.com/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 63
@@ -955,7 +954,7 @@
     {
         "id": "api_42",
         "name": "影库资源",
-        "baseUrl": "https://api.ykapi.net/api.php/provide/vod/at/xml",
+        "baseUrl": "https://api.ykapi.net/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 64
@@ -963,7 +962,7 @@
     {
         "id": "api_43",
         "name": "万影色",
-        "baseUrl": "https://wanying4.com/api.php/provide/vod/at/xml",
+        "baseUrl": "https://wanying4.com/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 65
@@ -971,7 +970,7 @@
     {
         "id": "api_44",
         "name": "银龙资源",
-        "baseUrl": "https://yinlong.tv/api.php/provide/vod/at/xml",
+        "baseUrl": "https://yinlong.tv/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 66
@@ -979,7 +978,7 @@
     {
         "id": "api_45",
         "name": "爱播资源",
-        "baseUrl": "https://cj.apiabzy.com/api.php/provide/vod/at/xml",
+        "baseUrl": "https://cj.apiabzy.com/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 67
@@ -987,7 +986,7 @@
     {
         "id": "api_46",
         "name": "CK资源",
-        "baseUrl": "http://www.feifei67.com/api.php/provide/vod/at/xml",
+        "baseUrl": "http://www.feifei67.com/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 68
@@ -995,7 +994,7 @@
     {
         "id": "api_47",
         "name": "老鸭资源",
-        "baseUrl": "https://api.apilyzy.com/api.php/provide/vod/at/xml",
+        "baseUrl": "https://api.apilyzy.com/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 69
@@ -1003,7 +1002,7 @@
     {
         "id": "api_48",
         "name": "花椒资源",
-        "baseUrl": "https://apihjzy.com/api.php/provide/vod/at/xml",
+        "baseUrl": "https://apihjzy.com/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 70
@@ -1011,7 +1010,7 @@
     {
         "id": "api_49",
         "name": "辣椒资源",
-        "baseUrl": "https://apilj.com/api.php/provide/vod/at/xml",
+        "baseUrl": "https://apilj.com/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 71
@@ -1019,7 +1018,7 @@
     {
         "id": "api_50",
         "name": "乐播资源",
-        "baseUrl": "https://lbapi9.com/api.php/provide/vod/at/xml",
+        "baseUrl": "https://lbapi9.com/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 72
@@ -1027,7 +1026,7 @@
     {
         "id": "api_51",
         "name": "佳丽资源",
-        "baseUrl": "http://www.jializyzapi.com/api.php/provide/vod/at/xml",
+        "baseUrl": "http://www.jializyzapi.com/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 73
@@ -1035,7 +1034,7 @@
     {
         "id": "api_52",
         "name": "番号资源",
-        "baseUrl": "http://fhapi9.com/api.php/provide/vod/at/xml",
+        "baseUrl": "http://fhapi9.com/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 74
@@ -1043,7 +1042,7 @@
     {
         "id": "api_53",
         "name": "鲨鱼资源",
-        "baseUrl": "https://shayuapi.com/api.php/provide/vod/at/xml",
+        "baseUrl": "https://shayuapi.com/api.php/provide/vod",
         "group": "premium",
         "enabled": true,
         "priority": 75
