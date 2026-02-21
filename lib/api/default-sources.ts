@@ -601,7 +601,7 @@ export const DEFAULT_SOURCES: VideoSource[] = [
         "group": "premium",
         "enabled": true,
         "priority": 75
-    }
+    },
     {
         "id": "foxziyuan",
         "name": "FOX资源",
