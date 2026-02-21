@@ -1,0 +1,17 @@
+[
+  {
+    "password": "1008",
+    "name": "Kelvin",
+    "role": "super_admin"
+  },
+  {
+    "password": "0106",
+    "name": "Mandy",
+    "role": "viewer"
+  },
+  {
+    "password": "0000",
+    "name": "王五",
+    "role": "viewer"
+  }
+]
