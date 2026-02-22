@@ -61,14 +61,14 @@ export function Navbar({ onReset, isPremiumMode = false }: NavbarProps) {
 
                         <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
                             
-                            {/* --- Premium 切換按鈕 --- */}
-                            <Link
+                            {/* --- 修正版：使用 <a> 標籤強制重新整理網頁，避免狀態衝突報錯 --- */}
+                            <a
                                 href={isPremiumMode ? '/' : '/premium'}
                                 className="flex items-center justify-center px-3 py-1.5 sm:px-4 sm:py-2 rounded-[var(--radius-full)] bg-rose-500/10 text-rose-500 border border-rose-500/20 hover:bg-rose-500/20 hover:scale-105 transition-all duration-200 cursor-pointer font-bold text-xs sm:text-sm"
                                 data-focusable
                             >
                                 {isPremiumMode ? '返回普通頻道' : 'Premium 頻道'}
-                            </Link>
+                            </a>
                             {/* --------------------------- */}
 
                             {/* IPTV Link - only show if user has iptv_access or no auth configured */}
@@ -108,8 +108,6 @@ export function Navbar({ onReset, isPremiumMode = false }: NavbarProps) {
                                     </button>
                                 </div>
                             )}
-                            
-                            {/* 這裡原本的 GitHub 連結已移除 */}
 
                             <Link
                                 href={settingsHref}
