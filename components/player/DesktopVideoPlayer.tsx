@@ -22,12 +22,10 @@ interface DesktopVideoPlayerProps {
   onTimeUpdate?: (currentTime: number, duration: number) => void;
   initialTime?: number;
   shouldAutoPlay?: boolean;
-  // Episode navigation props for auto-skip/auto-next
   totalEpisodes?: number;
   currentEpisodeIndex?: number;
   onNextEpisode?: () => void;
   isReversed?: boolean;
-  // Danmaku props
   videoTitle?: string;
   episodeName?: string;
 }
@@ -51,19 +49,16 @@ export function DesktopVideoPlayer({
   const isIOS = useIsIOS();
   const isMobile = useIsMobile();
 
-  // Danmaku
   const { danmakuEnabled, setDanmakuEnabled, comments: danmakuComments } = useDanmaku({
     videoTitle,
     episodeName,
     episodeIndex: currentEpisodeIndex,
   });
 
-  // State to track if device is in landscape mode
   const [isLandscape, setIsLandscape] = React.useState(true);
 
   React.useEffect(() => {
     const checkOrientation = () => {
-      // Check if width > height
       if (typeof window !== 'undefined') {
         setIsLandscape(window.innerWidth > window.innerHeight);
       }
@@ -78,15 +73,14 @@ export function DesktopVideoPlayer({
     };
   }, []);
 
-  // 🔴 這裡就是關鍵修改處！
-  // 移除了原本針對手機降級為 'window' 的邏輯
-  // 強制所有設備在按下全螢幕按鈕時，永遠預設使用系統全螢幕 ('native')
+  // --- 修正區域開始 ---
+  // 強制使用系統全螢幕，刪除原本的手機判斷邏輯
   const fullscreenType = 'native';
 
-  // Check if we need to force landscape (iOS + Fullscreen + Portrait)
-  const shouldForceLandscape = data.isFullscreen && fullscreenType === 'window' && isIOS && !isLandscape;
+  // 因為使用系統全螢幕，畫面旋轉將由使用者的手機系統自動控制，不需要前端強制旋轉
+  const shouldForceLandscape = false;
+  // --- 修正區域結束 ---
 
-  // Initialize HLS Player
   useHlsPlayer({
     videoRef: refs.videoRef,
     src,
@@ -111,7 +105,6 @@ export function DesktopVideoPlayer({
     setDuration,
   } = actions;
 
-  // Reset loading state and show spinner when source changes
   React.useEffect(() => {
     setIsLoading(true);
   }, [src, setIsLoading]);
@@ -129,7 +122,6 @@ export function DesktopVideoPlayer({
     isForceLandscape: shouldForceLandscape
   });
 
-  // Auto-skip intro/outro and auto-next episode
   const { isOutroActive, isTransitioningToNextEpisode } = useAutoSkip({
     videoRef,
     currentTime,
@@ -142,7 +134,6 @@ export function DesktopVideoPlayer({
     src,
   });
 
-  // Sensitive stalling detection (e.g. video stuck but HTML5 state says playing)
   useStallDetection({
     videoRef,
     isPlaying: data.isPlaying,
@@ -162,16 +153,15 @@ export function DesktopVideoPlayer({
     handleVideoError,
   } = logic;
 
-  // Mobile double-tap gesture for skip forward/backward
   const { handleTap } = useDoubleTap({
     onSingleTap: handleTouchToggleControls,
     onDoubleTapLeft: () => {
       logic.skipBackward();
-      handleMouseMove(); // Reset 3s auto-hide timer
+      handleMouseMove(); 
     },
     onDoubleTapRight: () => {
       logic.skipForward();
-      handleMouseMove(); // Reset 3s auto-hide timer
+      handleMouseMove(); 
     },
     onSkipContinueLeft: () => {
       logic.skipBackward();
@@ -187,23 +177,19 @@ export function DesktopVideoPlayer({
   return (
     <div
       ref={containerRef}
-      className={`kvideo-container relative aspect-video bg-black rounded-[var(--radius-2xl)] group ${data.isFullscreen && fullscreenType === 'window' ? 'is-web-fullscreen' : ''
-        } ${shouldForceLandscape ? 'force-landscape' : ''}`}
+      className="kvideo-container relative aspect-video bg-black rounded-[var(--radius-2xl)] group"
       onMouseMove={handleMouseMove}
       onMouseLeave={() => isPlaying && setShowControls(false)}
     >
-      {/* Clipping Wrapper for video and overlays - Restores the 'Liquid Glass' rounded look */}
-      <div className={`absolute inset-0 overflow-hidden pointer-events-none ${data.isFullscreen && fullscreenType === 'window' ? 'rounded-0' : 'rounded-[var(--radius-2xl)]'
-        }`}>
+      <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[var(--radius-2xl)]">
         <div className="absolute inset-0 pointer-events-auto">
-          {/* Video Element */}
           <video
             ref={videoRef}
             className="w-full h-full object-contain"
             poster={poster}
             x-webkit-airplay="allow"
-            playsInline={true} // Crucial for iOS custom fullscreen to work without native player taking over
-            controls={false} // Explicitly disable native controls
+            playsInline={true} 
+            controls={false} 
             onPlay={handlePlay}
             onPause={handlePause}
             onTimeUpdate={handleTimeUpdateEvent}
@@ -215,10 +201,9 @@ export function DesktopVideoPlayer({
               togglePlay();
             } : undefined}
             onTouchStart={isMobile ? handleTap : undefined}
-            {...({ 'webkit-playsinline': 'true' } as any)} // Legacy iOS support
+            {...({ 'webkit-playsinline': 'true' } as any)} 
           />
 
-          {/* Danmaku Canvas */}
           {danmakuEnabled && danmakuComments.length > 0 && (
             <DanmakuCanvas
               comments={danmakuComments}
@@ -237,7 +222,6 @@ export function DesktopVideoPlayer({
             onSkipForward={logic.skipForward}
             onSkipBackward={logic.skipBackward}
             isTransitioningToNextEpisode={isTransitioningToNextEpisode}
-            // More Menu Props
             showMoreMenu={data.showMoreMenu}
             isProxied={src.includes('/api/proxy')}
             onToggleMoreMenu={() => actions.setShowMoreMenu(!data.showMoreMenu)}
@@ -254,10 +238,9 @@ export function DesktopVideoPlayer({
               refs.moreMenuTimeoutRef.current = setTimeout(() => {
                 actions.setShowMoreMenu(false);
                 refs.moreMenuTimeoutRef.current = null;
-              }, 800); // Increased timeout for better stability
+              }, 800); 
             }}
             onCopyLink={logic.handleCopyLink}
-            // Speed Menu Props
             playbackRate={data.playbackRate}
             showSpeedMenu={data.showSpeedMenu}
             speeds={[0.5, 0.75, 1, 1.25, 1.5, 2]}
@@ -265,7 +248,6 @@ export function DesktopVideoPlayer({
             onSpeedChange={logic.changePlaybackSpeed}
             onSpeedMenuMouseEnter={logic.clearSpeedMenuTimeout}
             onSpeedMenuMouseLeave={logic.startSpeedMenuTimeout}
-            // Portal container
             containerRef={containerRef}
           />
 
