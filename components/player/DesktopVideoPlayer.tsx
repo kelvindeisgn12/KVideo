@@ -78,13 +78,10 @@ export function DesktopVideoPlayer({
     };
   }, []);
 
-  // Use user preference for fullscreen type, resolving 'auto' to device default
-  // Auto Rules:
-  // - Mobile: Window Fullscreen (Better for Danmaku/Controls)
-  // - Desktop: Native Fullscreen (Better for PiP/Performance)
-  const fullscreenType = settingsFullscreenType === 'auto'
-    ? (isIOS ? 'window' : isMobile ? 'window' : 'native') // Treat all mobile as window for consistency if auto
-    : settingsFullscreenType;
+  // 🔴 這裡就是關鍵修改處！
+  // 移除了原本針對手機降級為 'window' 的邏輯
+  // 強制所有設備在按下全螢幕按鈕時，永遠預設使用系統全螢幕 ('native')
+  const fullscreenType = 'native';
 
   // Check if we need to force landscape (iOS + Fullscreen + Portrait)
   const shouldForceLandscape = data.isFullscreen && fullscreenType === 'window' && isIOS && !isLandscape;
