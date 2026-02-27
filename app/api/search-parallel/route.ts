@@ -33,7 +33,6 @@ export async function POST(request: NextRequest) {
         const body = await request.json();
         const { query: rawQuery, sources: sourceConfigs, page = 1 } = body;
 
-        // 🟢 將使用者輸入的繁體字，自動轉換為簡體字以符合 API 搜尋需求
         const query = rawQuery ? t2s(rawQuery) : rawQuery;
 
         // Validate input
