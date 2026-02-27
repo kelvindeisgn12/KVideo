@@ -2,7 +2,6 @@ import type { VideoSource } from '@/lib/types';
 
 // Default predefined video sources - Real Chinese video APIs
 export const DEFAULT_SOURCES: VideoSource[] = [
-   export const DEFAULT_SOURCES: VideoSource[] = [
     { "id": "feifan", "name": "非凡资源", "baseUrl": "http://ffzy5.tv/api.php/provide/vod", "group": "normal", "enabled": true, "priority": 1, "searchPath": "", "detailPath": "" },
     { "id": "wolong", "name": "卧龙资源", "baseUrl": "https://wolongzyw.com/api.php/provide/vod", "group": "normal", "enabled": true, "priority": 2, "searchPath": "", "detailPath": "" },
     { "id": "zuida", "name": "最大资源", "baseUrl": "https://api.zuidapi.com/api.php/provide/vod", "group": "normal", "enabled": true, "priority": 3, "searchPath": "", "detailPath": "" },
