@@ -73,11 +73,8 @@ export function DesktopVideoPlayer({
     };
   }, []);
 
-  // --- 修正區域開始 ---
-  // 強制使用系統全螢幕，刪除原本的手機判斷邏輯
   const fullscreenType = 'native';
 
-  // 因為使用系統全螢幕，畫面旋轉將由使用者的手機系統自動控制，不需要前端強制旋轉
   const shouldForceLandscape = false;
   // --- 修正區域結束 ---
 
