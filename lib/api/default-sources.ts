@@ -111,4 +111,5 @@ export const DEFAULT_SOURCES: VideoSource[] = [
   { "id": "zhuijudaren", "name": "追剧达人", "baseUrl": "https://www.zhuijudaren.com/mogai_api.php/v1.vod", "group": "normal", "enabled": true, "priority": 235, "searchPath": "", "detailPath": "" },
   { "id": "69yuanxian", "name": "69院线", "baseUrl": "http://app.269w.com/api.php/v1.vod", "group": "normal", "enabled": true, "priority": 236, "searchPath": "", "detailPath": "" },
   { "id": "chuangyi", "name": "创艺", "baseUrl": "http://www.30dian.cn/api.php/v1.vod", "group": "normal", "enabled": true, "priority": 237, "searchPath": "", "detailPath": "" }
+  { "id": "anime1", "name": "Anime1", "baseUrl": "https://v.anime1.me/api", "group": "normal", "enabled": true, "priority": 238, "searchPath": "", "detailPath": "" }
 ];
